@@ -1,5 +1,6 @@
 import { babel } from '@rollup/plugin-babel';
 import { Addon } from '@embroider/addon-dev/rollup';
+import copy from 'rollup-plugin-copy';
 import { fileURLToPath } from 'node:url';
 import { resolve, dirname } from 'node:path';
 
@@ -72,5 +73,11 @@ export default {
 
     // Remove leftover build artifacts when starting a new build.
     addon.clean(),
+
+    // Copy WASM binary files to dist (after clean)
+    copy({
+      targets: [{ src: 'src/wasm/*.wasm', dest: 'dist/wasm' }],
+      hook: 'writeBundle',
+    }),
   ],
 };
