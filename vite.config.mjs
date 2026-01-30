@@ -1,3 +1,4 @@
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import { extensions, ember, classicEmberSupport } from '@embroider/vite';
 import { babel } from '@rollup/plugin-babel';
@@ -14,6 +15,11 @@ export default defineConfig({
       extensions,
     }),
   ],
+  resolve: {
+    alias: {
+      '@arthur5005/warper-ember': resolve(import.meta.dirname, './src'),
+    },
+  },
   build: {
     rollupOptions: {
       input: {
