@@ -32,7 +32,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build demo app
-        run: pnpm build && vite build --base=/warper-ember/
+        run: pnpm build && pnpm exec vite build --base=/warper-ember/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
