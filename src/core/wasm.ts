@@ -98,9 +98,8 @@ export const initializeWasm = (): Promise<void> => {
 
   initializationPromise = (async () => {
     try {
-      const wasmBindings = (await import(
-        '../wasm/warper_wasm.js'
-      )) as WasmModule;
+      const wasmBindings =
+        (await import('../wasm/warper_wasm.js')) as WasmModule;
 
       wasmModule = wasmBindings;
       const wasmInit = wasmBindings.default;

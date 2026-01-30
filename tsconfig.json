@@ -18,6 +18,10 @@
       "vite/client",
       "@embroider/core/virtual",
       "@glint/ember-tsc/types"
-    ]
+    ],
+    "paths": {
+      "@arthur5005/warper-ember": ["./src/index.ts"],
+      "@arthur5005/warper-ember/*": ["./src/*"]
+    }
   }
 }
