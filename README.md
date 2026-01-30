@@ -2,6 +2,12 @@
 
 An Ember addon providing high-performance list virtualization powered by [Warper](https://github.com/warper-org/warper)'s Rust/WASM core.
 
+## Demo
+
+**[Live Demo](https://arthur5005.github.io/warper-ember/)** - Stress test with 1M+ rows at 120+ FPS
+
+> **Performance Tip:** For maximum performance, disable Ember Inspector or open the demo in an incognito/private browser window. Browser extensions can significantly impact rendering performance.
+
 > **Early Development Warning**: This is an alpha release with no tests. It is intended as a starting point for development work on replacing or updating the core of Ember's VerticalCollection. The API reflects the upstream Warper API and is subject to change as development continues. Use at your own risk.
 
 ## What is Warper?
