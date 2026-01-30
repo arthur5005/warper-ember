@@ -8,7 +8,7 @@ An Ember addon providing high-performance list virtualization powered by [Warper
 
 > **Performance Tip:** For maximum performance, disable Ember Inspector or open the demo in an incognito/private browser window. Browser extensions can significantly impact rendering performance.
 
-> **Early Development Warning**: This is an alpha release with no tests. It is intended as a starting point for development work on replacing or updating the core of Ember's VerticalCollection. The API reflects the upstream Warper API and is subject to change as development continues. Use at your own risk.
+> **Early Development Warning**: This is an experimental release with no tests. It is intended as a starting point for development work on replacing or updating the core of Ember's [vertical-collection](https://github.com/html-next/vertical-collection). The API reflects the upstream Warper API and is subject to change as development continues. Use at your own risk.
 
 ## What is Warper?
 
