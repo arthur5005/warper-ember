@@ -1,6 +1,6 @@
 {
   "name": "@arthur5005/warper-ember",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0",
   "description": "A high-performance virtual list component for Ember using Warper from https://github.com/warper-org/warper",
   "keywords": [
     "warper-ember"
