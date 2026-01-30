@@ -26,6 +26,12 @@ Key performance characteristics:
 pnpm add @arthur5005/warper-ember
 ```
 
+## Requirements
+
+- **Ember 5.0+** (may work with 4.x but untested)
+- **GJS/GTS only** - This addon only supports strict mode templates (`.gjs`/`.gts` files). Classic `.hbs` templates are not supported.
+- **Embroider** - This is a v2 addon and requires an Embroider-compatible build pipeline.
+
 ## Limitations
 
 **No automatic element measurement**: This library does not measure rendered elements to determine their actual heights. The `estimateSize` function you provide is used directly as the item size. If your items have variable heights that can only be known after rendering, you'll need to handle measurement yourself.
